@@ -18,7 +18,7 @@ return {
 	post = function(path,body)
 		local POST = game.HttpService:PostAsync(config.GlitchURL..'/'..path,body)
 		local body = game.HttpService:JSONDecode(POST.Body)
-		if body.Sucess then
+		if Body.Sucess then
 			return true
 		else
 			error(body.Errors)
