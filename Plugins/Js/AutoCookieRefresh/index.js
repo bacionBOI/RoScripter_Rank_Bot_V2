@@ -6,5 +6,7 @@ function refresh(cookie){
     })
 }
 
-refresh(process.env.Cookie)
+
 setTimeout(refresh, 3600)
+
+module.exports = refresh
